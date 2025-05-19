@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">    <title>Document</title>
+</head>
+<body>
+    
+    <main>
+        <div class="main-container">
+            <div class="header">       
+                <input type="text" class="search-input">
+                <div onclick="search()" class="search"><i class="fa-solid fa-magnifying-glass search-icon"></i></div>
+            </div>
+            <div class="main-content">
+                <div class="weather-image">
+                    <img class="weather-png" src="images/clear.png" alt="">
+                </div>
+                <div class="temperature">
+                    <p class="heading">7°c</p>
+                </div>
+                <div class="city-name">New York</div>
+                <div class="humidity-speed">
+                    <div class="humidity">
+                        <div class="humidity-image image">
+                            <img src="images/humidity.png" alt="">
+                        </div>
+                        <div class="humidity-percentage">
+                            <p class="humidity-percentage-text">48%</p>
+                            <p style="font-size: 20px;">Humidity</p>
+                        </div>
+                    </div>
+                    <div class="wind-speed">
+                        <div class="wind-image image">
+                            <img src="images/wind.png" alt="">
+                        </div>
+                        <div class="wind-speed-data">
+                            <p class="speed-wind">10.29km/h</p>
+                            <p style="font-size: 20px;">Wind Speed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="popup">
+        <div class="popup-box">
+            <div class="inner-popup">
+                <div onclick="closePopup()" class="cross"><i class="fa-solid fa-xmark"></i></div>
+                <h2>Please Enter a Valid City</h2>
+            </div>
+            <img src="images/bunnyimg.png" alt="">
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
