@@ -3,7 +3,6 @@ const todoBody = document.querySelector('.todo-body');
 
 let todos = JSON.parse(localStorage.getItem('todos')) || [];
 
-// Load existing todos on page load
 document.addEventListener('DOMContentLoaded', renderTodos);
 
 search.addEventListener('keyup', (e) => {
